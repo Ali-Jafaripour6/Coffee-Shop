@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "dana";
+  src: url(../fonts/DanaFaNum-Regular.woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: "dana Medium";
+  src: url(../fonts/DanaFaNum-Medium.woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: "dana DemiBold";
+  src: url(../fonts/DanaFaNum-DemiBold.woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: "morabba Light";
+  src: url(../fonts/Morabba-Light.woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: "morabba Medium";
+  src: url(../fonts/Morabba-Medium.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "morabba Bold";
+  src: url(../fonts/Morabba-Bold.woff2);
+  font-display: swap;
+}
+
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --color-brown-100: #ece0d1;
+  --color-brown-300: #dbc1ac;
+  --color-brown-600: #967259;
+  --color-brown-900: #634832;
+
+  --shadow-normal: 0px 1px 10px rgba(0, 0, 0, 0.05);
+
+  --font-dana: "dana";
+  --font-danaMedium: "dana Medium";
+  --font-danaDemiBold: "dana DemiBold";
+  --font-morabbaLight: "morabba Light";
+  --font-morabbaMedium: "morabba Medium";
+  --font-morabbaBold: "morabba Bold";
+}
