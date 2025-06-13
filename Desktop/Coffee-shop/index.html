@@ -86,6 +86,7 @@
       </symbol>
     </svg>
 
+    <!-- Top Header -->
     <header
       class="flex right-0 left-0 items-center fixed w-[90%] h-24 px-10 top-9 py-5 rounded-3xl mx-auto backdrop-blur-[6px] bg-black/50"
     >
@@ -106,7 +107,7 @@
               <a class="group-hover:text-orange-300" href="">فروشگاه</a>
 
               <div
-                class="absolute w-52 invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all text-base shadow-normal *:transition-colors *:hover:text-orange-300 tracking-normal space-y-4 bg-white p-6 text-zinc-700 dark:text-white dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300 top-full *:inline-block"
+                class="absolute w-52 invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all delay-75 text-base shadow-normal *:transition-colors *:hover:text-orange-300 tracking-normal space-y-4 bg-white p-6 text-zinc-700 dark:text-white dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300 top-full *:inline-block"
               >
                 <a href="">قهوه تلخ درجه یک</a>
                 <a href="">قهوه شیرین ویژه</a>
@@ -133,13 +134,13 @@
               </div>
               <!-- cart -->
               <div
-                class="absolute w-[400px] left-0 invisible opacity-0 top-full group-hover:opacity-100 group-hover:visible transition-all text-base shadow-normal *:transition-colors *:hover:text-orange-300 tracking-normal space-y-4 bg-white p-5 text-zinc-700 dark:text-white dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300"
+                class="absolute w-[400px] left-0 invisible opacity-0 top-full group-hover:opacity-100 group-hover:visible transition-all delay-75 text-base shadow-normal *:transition-colors *:hover:text-orange-300 tracking-normal space-y-4 bg-white p-5 text-zinc-700 dark:text-white dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300"
               >
                 <!-- header top -->
                 <div
                   class="flex items-center justify-between font-danaMedium text-xs tracking-tighter"
                 >
-                  <span class="text-gray-300"> ۱ مورد</span>
+                  <span class="text-zinc-700"> ۱ مورد</span>
                   <a href="" class="flex items-center text-orange-300">
                     مشاهده سبد خرید
                     <svg class="h-4 w-4">
@@ -147,9 +148,84 @@
                     </svg>
                   </a>
                 </div>
-
+                <!-- header product -->
+                <div
+                  class="border-b pb-1 border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 *:py-5"
+                >
+                  <div class="flex gap-x-2.5">
+                    <img
+                      src="./src/images/products/p1.png"
+                      class="w-30 h-30"
+                      alt="Products1"
+                    />
+                    <div class="flex flex-col justify-between">
+                      <h4
+                        class="font-danaMedium text-zinc-700 line-clamp-2 dark:text-white text-base"
+                      >
+                        قهوه اسپرسو بن مانو مدل پریسکا ۲۵۰ گرمی
+                      </h4>
+                      <div>
+                        <span
+                          class="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter"
+                          >۱۴.۵۰۰ تومان تخفیف</span
+                        >
+                        <div
+                          class="text-zinc-700 dark:text-white font-danaDemiBold"
+                        >
+                          ۱۷۵,۰۰۰
+                          <span class="font-dana text-sm">تومان</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-2.5">
+                    <img
+                      src="./src/images/products/p2.png"
+                      class="w-30 h-30"
+                      alt="Products1"
+                    />
+                    <div class="flex flex-col justify-between">
+                      <h4
+                        class="font-danaMedium text-zinc-700 line-clamp-2 dark:text-white text-base"
+                      >
+                        قهوه آمریکانو سیاه رنگ اصل دوبی - ۲۵۰ گرمی
+                      </h4>
+                      <div>
+                        <span
+                          class="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter"
+                          >۱۴.۵۰۰ تومان تخفیف</span
+                        >
+                        <div
+                          class="text-zinc-700 dark:text-white font-danaDemiBold"
+                        >
+                          ۱۷۵,۰۰۰
+                          <span class="font-dana text-sm">تومان</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <!-- header body -->
-                 
+                <div class="flex justify-between items-center mt-5">
+                  <div>
+                    <span
+                      class="text-zinc-500 font-danaMedium text-xs tracking-tighter"
+                      >مبلغ قابل پرداخت</span
+                    >
+                    <div
+                      class="text-zinc-700 dark:text-white font-danaDemiBold"
+                    >
+                      ۳۵۰,۰۰۰
+                      <span class="font-dana text-sm">تومان</span>
+                    </div>
+                  </div>
+
+                  <a
+                    href=""
+                    class="text-white h-14 w-[144px] flex items-center justify-center rounded-xl bg-teal-600 dark:bg-emerald-500 hover:bg-teal-800 dark:hover:bg-emerald-600 transition-all tracking-tightest"
+                    >ثبت سفارش</a
+                  >
+                </div>
               </div>
             </div>
             <div class="cursor-pointer" id="toggle-theme">
