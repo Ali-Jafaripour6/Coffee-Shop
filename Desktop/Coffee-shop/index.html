@@ -262,7 +262,7 @@
                 <div
                   class="flex items-center justify-between font-danaMedium text-xs tracking-tighter"
                 >
-                  <span class="text-zinc-700"> ۱ مورد</span>
+                  <span class="text-zinc-700"> ۲ مورد</span>
                   <a href="" class="flex items-center text-orange-300">
                     مشاهده سبد خرید
                     <svg class="h-4 w-4">
@@ -516,12 +516,127 @@
       </div>
 
       <!-- Shopping Cart Logo -->
-      <div>
+      <div class="basketIcon">
         <svg class="w-6 h-6 text-zinc-700 dark:text-white">
           <use href="#shopping-cart"></use>
         </svg>
       </div>
+
+
+      <!-- cart Section -->
+      <div
+        class="cart-menu flex flex-col jus fixed top-0 bottom-0 transition-all -left-64 w-64 min-h-screen  pt-5 px-4 bg-white dark:bg-zinc-700 z-20"
+      >
+        <div
+          class="flex items-center justify-between pb-5 mb-5 border-b border-b-gray-300 dark:border-b-white/10"
+        >
+
+          <svg class="w-5 h-5 x-btn text-zinc-600 dark:text-white">
+            <use href="#x-mark">
+            </use>
+          </svg>
+          <span class="text-zinc-700 dark:text-white font-danaMedium">سبد خرید</span>
+        </div>
+        <!-- cart Menu -->
+         <div class="*:pb-5 *:mb-5 overflow-y-auto">
+          <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                    <img
+                      src="./src/images/products/p1.png"
+                      class="w-[90px] h-[90px]"
+                      alt="Products1"
+                    />
+                    <div class="flex flex-col justify-between gap-y-1.5">
+                      <h4
+                        class="font-danaMedium text-zinc-700 line-clamp-2 dark:text-white text-sm"
+                      >
+                        قهوه اسپرسو بن مانو مدل پریسکا ۲۵۰ گرمی
+                      </h4>
+                      <div>
+                        <span
+                          class="text-teal-600 dark:text-emerald-500 font-danaMedium text-xs tracking-tighter"
+                          >۱۴.۵۰۰ تومان تخفیف</span
+                        >
+                        <div
+                          class="text-zinc-700 dark:text-white font-danaDemiBold"
+                        >
+                          ۱۷۵,۰۰۰
+                          <span class="font-dana text-xs">تومان</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+           <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                    <img
+                      src="./src/images/products/p2.png"
+                      class="w-[90px] h-[90px]"
+                      alt="Products1"
+                    />
+                    <div class="flex flex-col justify-between gap-y-1.5">
+                      <h4
+                        class="font-danaMedium text-zinc-700 line-clamp-2 dark:text-white text-sm"
+                      >
+                        قهوه اسپرسو بن مانو مدل پریسکا ۲۵۰ گرمی
+                      </h4>
+                      <div>
+                        <span
+                          class="text-teal-600 dark:text-emerald-500 font-danaMedium text-xs tracking-tighter"
+                          >۱۴.۵۰۰ تومان تخفیف</span
+                        >
+                        <div
+                          class="text-zinc-700 dark:text-white font-danaDemiBold"
+                        >
+                          ۱۷۵,۰۰۰
+                          <span class="font-dana text-xs">تومان</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--  -->
+                  <!--  -->
+         </div>
+         
+
+
+        <!-- cart Footer -->
+        <div
+          class="flex items-center gap-x-4 mt-auto mb-8"
+        >
+        <a href="" class="flex w-24 pt-2 text-white items-center justify-center h-11 bg-teal-600 dark:bg-emerald-500 rounded-xl">ثبت سفارش</a>
+        <div>
+          <span class="font-danaMedium text-gray-300 text-xs tracking-tighter">مبلغ قابل پرداخت</span>
+          <div class="text-zinc-700 dark:text-white font-danaDemiBold">
+            ۳۵۰,۰۰۰
+            <span class="font-dana text-xs">تومان</span>
+          </div>
+        </div>
+          
+        </div>
+      </div>
     </header>
+
+
+<!-- Main -->
+
+<main>
+  <section class="home h-[200px] xs:h-auto xs:aspect-[2/1] bg-custom-header bg-no-repeat bg-cover bg-[center_top]">
+    <div class="container h-full flex justify-end items-center md:min-h-screen">
+      <div class="text-white">
+        <h2 class="font-morabbaBold text-2xl md:text-6xl mb-0.5 md:mb-2">قهوه عربیکا تانزانیا</h2>
+        <span class="font-morabbaLight text-xl md:text-5xl">یک فنجان بالانس!</span>
+        <span class="block w-[100px] h-px md:h-0.5 bg-orange-300 my-3 md:my-8"></span>
+        <p class="text-xs max-w-[201px] md:max-w-[460px] md:text-2xl"> قطعا نام آشنای عربیکا را شنیده‌اید، یکی از گونه‌های قهوه که در نواحی مختلف دنیا کشت می‌شود.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+
+
+
+
 
     <div
       class="hidden transition-all overlay md:hidden fixed inset-0 w-full h-full bg-black/50 z-10"

@@ -5,20 +5,35 @@ const shopIcon = document.querySelector("#shopIcon");
 const mobileList = document.querySelectorAll(".mobile_list");
 const navIcon = document.querySelector(".nav-icon");
 const navMenu = document.querySelector(".nav-menu");
-const xBtn = document.querySelector(".x-btn");
 const overlay = document.querySelector(".overlay");
+const basketIcon = document.querySelector(".basketIcon");
+const cartMenu = document.querySelector(".cart-menu");
+let xBtn = document.querySelectorAll(".x-btn");
+
+basketIcon.addEventListener("click", () => {
+  cartMenu.classList.remove("-left-64");
+  cartMenu.classList.add("left-0");
+  overlay.classList.remove("hidden");
+});
 
 overlay.addEventListener("click", () => {
+  cartMenu.classList.add("-left-64");
+  cartMenu.classList.remove("left-0");
+
   navMenu.classList.add("-right-64");
   navMenu.classList.remove("right-0");
   overlay.classList.add("hidden");
   console.log("ee");
 });
 
-xBtn.addEventListener("click", (event) => {
-  navMenu.classList.add("-right-64");
-  navMenu.classList.remove("right-0");
-  overlay.classList.add("hidden");
+xBtn.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    cartMenu.classList.add("-left-64");
+    cartMenu.classList.remove("left-0");
+    navMenu.classList.add("-right-64");
+    navMenu.classList.remove("right-0");
+    overlay.classList.add("hidden");
+  });
 });
 
 navIcon.addEventListener("click", (event) => {

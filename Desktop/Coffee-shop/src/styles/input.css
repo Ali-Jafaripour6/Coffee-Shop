@@ -35,6 +35,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+  --breakpoint-xs: 480px;
+
   --color-brown-100: #ece0d1;
   --color-brown-300: #dbc1ac;
   --color-brown-600: #967259;
@@ -51,12 +53,7 @@
 
   --spacing-30: 7.5rem;
   --tracking-tightest: -0.065em;
-}
-
-body {
-  background-image: url(../images/headerBgDesktop.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  --spacing-lg: 0.625rem;
 }
 
 .submenu_item--active {
@@ -75,4 +72,23 @@ body {
   bottom: 0;
   top: 0;
   margin: auto;
+}
+
+.bg-mobile {
+  background-image: url(../images/headerBgMobile.webp);
+}
+
+.bg-desktop {
+  background-image: url(../images/headerBgDesktop.webp);
+}
+
+.container {
+  @apply w-7xl mx-auto px-4 lg:px-2.5;
+}
+
+.bg-custom-header {
+  background-image: url(../images/headerBgMobile.webp);
+  @variant md {
+    background-image: url(../images/headerBgDesktop.webp);
+  }
 }
