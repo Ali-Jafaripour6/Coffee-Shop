@@ -58,3 +58,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.submenu_item--active {
+  @apply pr-2.5 relative text-orange-300;
+}
+
+.submenu_item--active::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 100px;
+  background-color: #fdba74;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
