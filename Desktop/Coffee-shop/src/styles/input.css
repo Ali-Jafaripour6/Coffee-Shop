@@ -153,3 +153,7 @@
   background-color: #ef4444;
   top: -2px;
 }
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
