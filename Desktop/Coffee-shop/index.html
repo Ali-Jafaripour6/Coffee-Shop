@@ -13,7 +13,20 @@
   >
     <!-- app icons -->
     <svg class="hidden">
-      <svg
+      <symbol
+        id="chevron-left"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+
+      <symbol
         id="curve"
         xmlns="http://www.w3.org/2000/svg"
         width="100"
@@ -22,7 +35,7 @@
         fill="currentColor"
       >
         <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" />
-      </svg>
+      </symbol>
 
       <symbol
         id="down"
@@ -655,7 +668,23 @@
         </div>
       </section>
 
-      <section class="products"></section>
+      <section class="products pt-48">
+        <div class="container">
+          <div class="flex items-end justify-between">
+            <div>
+              <h3 class="section-tile">جدیدترین محصولات</h3>
+              <span class="section-subtitle">فرآوری شده از دانه قهوه</span>
+            </div>
+            <a href="" class="section-link">
+              <span class="hidden md:inline-block">مشاهده همه محصولات</span>
+              <span class="inline-block md:hidden">مشاهده همه</span>
+
+              <svg svg class="w-5 h-5">
+                <use href="#chevron-left"></use></svg
+            ></a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <div
