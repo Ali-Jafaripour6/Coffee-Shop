@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="./src/styles/main.css" />
     <link rel="icon" href="./src/images/fav-icon.png" />
   </head>
-  <body
-    class="font-dana bg-gray-100 dark:bg-zinc-800 h-[2000px]"
-    onload="themeChange()"
-  >
+  <body class="font-dana bg-gray-100 dark:bg-zinc-800" onload="themeChange()">
     <!-- app icons -->
     <svg class="hidden">
       <symbol
@@ -23,6 +20,30 @@
           fill-rule="evenodd"
           d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
           clip-rule="evenodd"
+        />
+      </symbol>
+
+      <symbol
+        id="chevron-mini-down"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+
+      <symbol
+        id="x-mark-mini"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z"
         />
       </symbol>
 
@@ -293,7 +314,7 @@
                   <a href="" class="flex items-center text-orange-300">
                     مشاهده سبد خرید
                     <svg class="h-4 w-4">
-                      <use href="#chevron"></use>
+                      <use href="#chevron-left"></use>
                     </svg>
                   </a>
                 </div>
@@ -379,7 +400,7 @@
       class="flex md:hidden items-center justify-between bg-white dark:bg-zinc-700 px-4 h-16"
     >
       <!-- nav Icon -->
-      <div class="nav-icon">
+      <div class="nav-icon dark:text-white">
         <svg class="w-6 h-6">
           <use href="#bars"></use>
         </svg>
@@ -404,7 +425,7 @@
             />
           </div>
           <svg class="w-5 h-5 x-btn text-zinc-600 dark:text-white">
-            <use href="#x-mark"></use>
+            <use href="#x-mark-mini"></use>
           </svg>
         </div>
         <!-- main Menu -->
@@ -429,7 +450,7 @@
               >
               <span id="submenu-btn">
                 <svg class="w-4 h-4">
-                  <use href="#down"></use>
+                  <use href="#chevron-mini-down"></use>
                 </svg>
               </span>
             </div>
@@ -531,7 +552,7 @@
           class="flex items-center justify-between pb-5 mb-5 border-b border-b-gray-300 dark:border-b-white/10"
         >
           <svg class="w-5 h-5 x-btn text-zinc-600 dark:text-white">
-            <use href="#x-mark"></use>
+            <use href="#x-mark-mini"></use>
           </svg>
           <span class="text-zinc-700 dark:text-white font-danaMedium"
             >سبد خرید</span
@@ -668,9 +689,10 @@
         </div>
       </section>
 
-      <section class="products pt-48">
+      <section class="products pt-8 md:pt-24 lg:pt-48">
         <div class="container">
-          <div class="flex items-end justify-between">
+          <!-- header products -->
+          <div class="flex items-end justify-between mb-5 md:mb-12">
             <div>
               <h3 class="section-tile">جدیدترین محصولات</h3>
               <span class="section-subtitle">فرآوری شده از دانه قهوه</span>
@@ -682,6 +704,51 @@
               <svg svg class="w-5 h-5">
                 <use href="#chevron-left"></use></svg
             ></a>
+          </div>
+          <!-- body products -->
+          <div
+            class="grid grid-cols-2 *:p-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5 *:rounded-2xl *:bg-white *:dark:bg-zinc-700 *:shadow-normal"
+          >
+            <div>
+              <div class="relative mb-2 md:mb-5">
+                <img
+                  src="./src/images/products/p1.png"
+                  class="md:w-auto w-32 mx-auto"
+                  alt=""
+                />
+                <span
+                  class="absolute text-xs/[24px] md:text-base/[34px] top-1 right-1 font-danaDemiBold text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full block h-5 md:h-[30px] bg-orange-300"
+                  >۱۲٪</span
+                >
+              </div>
+              <h5
+                class="font-danaMedium md:text-xl text-sm text-zinc-700 dark:text-white line-clamp-2"
+              >
+                قهوه ترک بن مانو مقدار ۲۵۰ گرم اصلی وارداتی
+              </h5>
+              <div class="mt-1.5 md:mt-2.5 flex gap-x-2 md:gap-x-2.5">
+                <div class="text-teal-600 dark:text-emerald-500">
+                  <span class="font-danaDemiBold md:text-xl text-base"
+                    >۱۵۴,۰۰۰</span
+                  >
+                  <span class="md:text-sm text-xs tracking-tighter">تومان</span>
+                </div>
+                <div class="offer">
+                  <span class="text-xs md:text-xl">۱۷۵,۰۰۰</span>
+                  <span
+                    class="hidden xl:inline text-xs md:text-sm tracking-tighter"
+                    >تومان</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
         </div>
       </section>
