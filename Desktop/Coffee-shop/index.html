@@ -670,6 +670,7 @@
     <!-- Main -->
 
     <main>
+      <!-- header background -->
       <section
         class="home relative h-[200px] xs:h-auto xs:aspect-[2/1] bg-custom-header bg-no-repeat bg-cover bg-[center_top]"
       >
@@ -718,10 +719,10 @@
           </svg>
         </div>
       </section>
-
+      <!-- products -->
       <section class="products pt-8 md:pt-24 lg:pt-48">
         <div class="container">
-          <!-- header products -->
+          <!-- product title -->
           <div class="flex items-end justify-between mb-5 md:mb-12">
             <div>
               <h3 class="section-tile">جدیدترین محصولات</h3>
@@ -735,7 +736,7 @@
                 <use href="#chevron-left"></use></svg
             ></a>
           </div>
-          <!-- body products -->
+          <!-- products items -->
           <div
             class="grid grid-cols-2 *:p-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5 *:rounded-2xl *:bg-white *:dark:bg-zinc-700 *:shadow-normal"
           >
@@ -743,6 +744,7 @@
               <div class="relative mb-2 md:mb-5">
                 <img
                   src="./src/images/products/p1.png"
+                  loading="lazy"
                   class="md:w-auto w-32 mx-auto"
                   alt=""
                 />
@@ -813,6 +815,7 @@
               <div class="relative mb-2 md:mb-5">
                 <img
                   src="./src/images/products/p2.png"
+                  loading="lazy"
                   class="md:w-auto w-32 mx-auto"
                   alt=""
                 />
@@ -883,6 +886,7 @@
               <div class="relative mb-2 md:mb-5">
                 <img
                   src="./src/images/products/p3.png"
+                  loading="lazy"
                   class="md:w-auto w-32 mx-auto"
                   alt=""
                 />
@@ -953,6 +957,7 @@
               <div class="relative mb-2 md:mb-5">
                 <img
                   src="./src/images/products/p4.png"
+                  loading="lazy"
                   class="md:w-auto w-32 mx-auto"
                   alt=""
                 />
@@ -1023,6 +1028,7 @@
               <div class="relative mb-2 md:mb-5">
                 <img
                   src="./src/images/products/p5.png"
+                  loading="lazy"
                   class="md:w-auto w-32 mx-auto"
                   alt=""
                 />
@@ -1093,6 +1099,7 @@
               <div class="relative mb-2 md:mb-5">
                 <img
                   src="./src/images/products/p6.png"
+                  loading="lazy"
                   class="md:w-auto w-32 mx-auto"
                   alt=""
                 />
@@ -1163,6 +1170,7 @@
               <div class="relative mb-2 md:mb-5">
                 <img
                   src="./src/images/products/p7.png"
+                  loading="lazy"
                   class="md:w-auto w-32 mx-auto"
                   alt=""
                 />
@@ -1233,13 +1241,14 @@
               <div class="relative mb-2 md:mb-5">
                 <img
                   src="./src/images/products/p8.png"
+                  loading="lazy"
                   class="md:w-auto w-32 mx-auto"
                   alt=""
                 />
-                <span
+                <!-- <span
                   class="absolute text-xs/[24px] md:text-base/[34px] top-1 right-1 font-danaDemiBold text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full block h-5 md:h-[30px] bg-orange-300"
                   >۱۲٪</span
-                >
+                > -->
               </div>
               <h5
                 class="font-danaMedium min-h-[40px] md:min-h-[56px] md:text-xl text-sm text-zinc-700 dark:text-white line-clamp-2"
@@ -1248,17 +1257,17 @@
               </h5>
               <div class="mt-1.5 md:mt-2.5 flex gap-x-2 md:gap-x-2.5">
                 <div class="text-teal-600 dark:text-emerald-500">
-                  <span class="font-danaDemiBold md:text-xl text-base"
-                    >۱۵۴,۰۰۰</span
+                  <span class="text-red-400 md:text-xl text-base"
+                    >موجود نیست</span
                   >
-                  <span class="md:text-sm text-xs tracking-tighter">تومان</span>
+                  <!-- <span class="md:text-sm text-xs tracking-tighter">تومان</span> -->
                 </div>
                 <div class="offer">
-                  <span class="text-xs md:text-xl">۱۷۵,۰۰۰</span>
+                  <!-- <span class="text-xs md:text-xl">۱۷۵,۰۰۰</span>
                   <span
                     class="hidden xl:inline text-xs md:text-sm tracking-tighter"
                     >تومان</span
-                  >
+                  > -->
                 </div>
               </div>
               <div class="flex items-center justify-between mt-2.5">
@@ -1299,6 +1308,33 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- category banner -->
+      <section class="category-banner my-20">
+        <div class="container">
+          <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 text-white">
+            <a class="category-banner1">
+              <span
+                class="font-danaDemiBold mb-4 md:mb-7 text-2xl/6 lg:text-4xl/6"
+              >
+                انواع قهوه
+              </span>
+              <span class="md:font-danaMedium md:text-xl/6"
+                >ترکیبی و تک خاستگاه</span
+              >
+            </a>
+            <a class="category-banner2">
+              <span
+                class="font-danaDemiBold mb-4 md:mb-7 text-2xl/6 lg:text-4xl/6"
+              >
+                پودرهای فوری
+              </span>
+              <span class="md:font-danaMedium md:text-xl/6"
+                >نسکافه، هات چاکلت، ماسالا</span
+              >
+            </a>
           </div>
         </div>
       </section>

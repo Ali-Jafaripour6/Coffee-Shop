@@ -157,3 +157,28 @@
 .flex-center {
   @apply flex justify-center items-center;
 }
+
+.category-banner1 {
+  @apply flex flex-col justify-center pr-7 md:pr-12 rounded-2xl h-[142px] md:h-[248px];
+  background-image:
+    linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.6) 33.85%,
+      rgba(243, 244, 246, 0.1) 100%
+    ),
+    url(../images/categories/category-right.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.category-banner2 {
+  @apply flex flex-col justify-center pr-7 md:pr-12 rounded-2xl h-[142px] md:h-[248px];
+  background-image:
+    linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.6) 33.85%,
+      rgba(243, 244, 246, 0.1) 100%
+    ),
+    url(../images/categories/category-left.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
