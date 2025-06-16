@@ -80,3 +80,29 @@ submenuBtn.addEventListener("click", (event) => {
   submenu.classList.toggle("hidden");
   shopIcon.classList.toggle("text-orange-300");
 });
+
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 2,
+  spaceBetween: 14,
+  freeMode: true,
+  loop: true,
+  breakpoints: {
+    // when window width is >= 320px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 22,
+    },
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next-custom",
+    prevEl: ".swiper-button-prev-custom",
+  },
+  autoplay: {
+    delay: 2000,
+  },
+});
