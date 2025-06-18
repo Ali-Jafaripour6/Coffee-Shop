@@ -158,6 +158,10 @@
 
 .flex-center {
   @apply flex justify-center items-center;
+
+  @variant md {
+    @apply flex justify-center items-center;
+  }
 }
 
 .category-banner1 {
